@@ -1,0 +1,32 @@
+<%- include ('partials/header.ejs') %>
+
+<form action="/add" method="post">
+    <h1><%= title %></h1><br>
+    <p style="margin-top:2%;margin-bottom:1%;">Topic</p>
+    <input type="text" name="topic" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;" >Question Level</p>
+    <input type="text" name="qlevel" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Question</p>
+    <textarea name="Question" id="" cols="189" rows="5" required></textarea><br>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 1</p>
+    <input type="text" name="o1" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 2</h3>
+    <input type="text" name="o2" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 3</p>
+    <input type="text" name="o3" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 4</p>
+    <input type="text" name="o4" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Correct Answer</p>
+    <input type="text" name="correct" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Language</p>
+    <select name="lan" required>
+        <option value="">Select Language</option>
+        <option value="English">Engilsh</option>
+        <option value="Kannada">Kannada</option>
+    </select>
+    <br><br>
+    <button type="submit" style="margin: 20px;" name="update"  class="btn btn-primary">Save Question</button>
+
+</form>
+
+<%- include ('partials/footer.ejs') %>

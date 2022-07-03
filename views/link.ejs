@@ -1,0 +1,12 @@
+<%- include ('partials/header.ejs') %>
+
+<form action="<%= link %>" method="get">
+    <button type="submit" class="btn btn-light" >Preview</button>
+</form>
+
+<br><br><br>
+<form action="/end" method="post">
+    <button type="submit" class="btn btn-dark">Generate API</button>
+</form>
+
+<%- include ('partials/footer.ejs') %>

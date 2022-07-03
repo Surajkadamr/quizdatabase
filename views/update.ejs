@@ -1,0 +1,34 @@
+<%- include ("partials/header.ejs") %>
+
+<form action="/update" method="post">
+    <h1><%= title %></h1><br>
+    <p style="margin-top:2%;margin-bottom:1%;">Topic</p>
+    <input type="text" name="topic" id="" size="185" value="<%= result.topicNumber %>" required>
+    <p style="margin-top:2%;margin-bottom:1%;" >Question Level</p>
+    <input type="text" name="qlevel"  size="185" value="<%= result.level %>" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Question</p>
+    <textarea name="Question" id="" cols="189" rows="5" required><%= result.question %></textarea><br>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 1</p>
+    <input type="text" name="o1" id="" size="185" value="<%= result.option1 %>" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 2</h3>
+    <input type="text" name="o2" id="" size="185" value="<%= result.option2 %>" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 3</p>
+    <input type="text" name="o3" value="<%= result.option3 %>" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Option 4</p>
+    <input type="text" name="o4" id="" value="<%= result.option4 %>" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Correct Answer</p>
+    <input type="text" name="correct" value="<%= result.correct %>" id="" size="185" required>
+    <p style="margin-top:2%;margin-bottom:1%;">Language</p>
+    <select name="lan" required>
+        <option value="">Select Language</option>
+        <option value="English">Engilsh</option>
+        <option value="Kannada">Kannada</option>
+    </select>
+    <input type="hidden" name="hidden" value="<%= result._id %>">
+    <br><br>
+    <button type="submit" style="margin: 20px;" name="update" >Save Question</button>
+
+</form>
+
+
+<%- include ("partials/footer.ejs") %>

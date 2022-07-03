@@ -1,0 +1,24 @@
+<%- include ('partials/header.ejs') %>
+
+<h1>Preview</h1>
+<hr size="8rem">
+<% results.forEach(function(result){ %>
+    <% i=i+1; %>
+     <p>Question Number:<%=i%></p>
+    <h4><%= result.question %></h4><br>
+    <p><%= result.topicNumber %></p>
+    <p><%= result.option1 %></p>
+    <p><%= result.option2 %></p>
+    <p><%= result.option3 %></p>
+    <p><%= result.option4 %></p>
+    <br>
+    <p>Correct answer:<%= result.correct %></p>
+    <br>
+    <hr size="8rem" >
+<% }) %>
+<form action="/end" method="post">
+    <button type="submit" class="btn btn-primary">Generate API</button>
+</form>
+
+<br><br><br>
+<%- include ('partials/footer.ejs') %>

@@ -1,0 +1,43 @@
+<%- include ('partials/header.ejs') %>
+
+<form action="/home" method="post">
+    <button type="submit" class="btn btn-primary"> back to home page</button>
+</form>
+<h1>Questions</h1><br>
+<table style="width:100%" class="table table-bordered">
+    <tr>
+        <th style="width: 50%;">questions</th>
+        <th>options</th>
+        <th>correct</th>
+        <th>actions</th>
+    </tr>
+    <% results.forEach(function(result){ %>
+        <% var r=result._id%>
+    <tr>
+        <td><%= result.question %></td>
+        <td>
+            <p>a)<%= result.option1 %><br></p>
+            <p>b)<%= result.option2 %><br></p>
+            <p>c)<%= result.option3 %><br></p>
+            <p>d)<%= result.option4 %><br></p>
+        </td>
+        <td><%= result.correct %></td>
+        <td>
+            <form action="/delete" method="post">
+                <button type="submit" name="delete" class="btn btn-danger" value="<%= result._id %>">delete</button>
+                <input type="hidden" name="hidden" value="<%= result.language %>">
+            </form>
+            <br> <br>
+            <form action="" method="get">
+                <button type="submit" name="update" class="btn btn-warning">update</button>
+            </form>
+            <!-- <form action="/<%= result._id %>/<%= result.language %>" method="get">
+                <button type="submit" name="update" class="btn btn-warning">update</button>
+            </form> -->
+        </td>
+    </tr>
+    <% }); %>
+</table>
+
+
+<%- include ('partials/footer.ejs') %>

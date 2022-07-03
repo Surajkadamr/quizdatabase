@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+
+        <!-- third party css -->
+        <link href="css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <script src="https://kit.fontawesome.com/ffa807c823.js" crossorigin="anonymous"></script>
+        
+
+    </head>
+
+    <body class="loading" data-layout="topnav" data-layout-config='{"layoutBoxed":false,"darkMode":false,"showRightSidebarOnStart": true}'>
+        
+        <!-- Begin page -->
+        <div class="wrapper">
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom topnav-navbar topnav-navbar-dark">
+                        <div class="container-fluid">
+
+                            <!-- LOGO -->
+                            <a href="" class="topnav-logo">
+                                <span class="topnav-logo-lg">
+                                    <p style="color: white;text-align: center;">Sumukha E-Solutions (Quiz DataBase)</p>
+                                </span>
+                                <span class="topnav-logo-sm">
+                                </span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-animated dropdown-lg" id="search-dropdown">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Topbar -->
+
+                    <div class="topnav shadow-sm">
+                        <div class="container-fluid">
+                            <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+        
+                                <div class="collapse navbar-collapse" id="topnav-menu-content">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="/home">
+                                                <i class="fa-solid fa-house"></i>  Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa-solid fa-database"></i>  Questions <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-layouts">
+                                                <a href="/english" class="dropdown-item">English</a>
+                                                <a href="/kannada" class="dropdown-item">Kannada</a>
+                                            </div>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="/generatequestions">
+                                                <i class="fa-solid fa-database"></i> Generate Questions
+                                            </a>
+                                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle arrow-none" href="/add">
+                                                    <i class="fa-solid fa-circle-plus"></i> Add Questions
+                                                </a>
+
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle arrow-none" href="/logout">
+                                                <i class="fa-solid fa-right-from-bracket"></i>  Log-out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <form class="d-flex">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-light" id="dash-daterange">
+                                                <span class="input-group-text bg-info border-info text-white">
+                                                    <i class="fa-solid fa-calendar"></i>
+                                                </span>
+                                            </div>
+                                            <a href="javascript: void(0);" class="btn btn-info ms-2">
+                                                <i class="fa-solid fa-arrows-rotate"></i>
+                                            </a>
+                                        </form>
+                                    </div>
+                                    <h4 class="page-title">Sumukha E-solutions</h4>
+                                </div>
+                            </div>
+                        </div>

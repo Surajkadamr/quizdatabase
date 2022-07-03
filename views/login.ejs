@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Quiz Data-base Log-in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        
+        <!-- App css -->
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    </head>
+
+    <body class="authentication-lg" data-layout-config='{"darkMode":false}'>
+
+        <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4 col-lg-5">
+                        <div class="card">
+
+                            <!-- Logo -->
+                            <div class="card-header pt-4 pb-4 text-center bg-primary">
+                                    <span><h4 style="color: white;">Sumukha E-solutions (Quiz-DataBase)</h4></span>
+                                </a>
+                            </div>
+
+                            <div class="card-body p-4">
+                                
+                                <div class="text-center w-75 m-auto">
+                                    <h4 class="text-dark-50 text-center mt-0 fw-bold">Sign In</h4>
+                                    <P style="color: red;"><%= erroe %></P>
+                                    <p class="text-muted mb-4">Enter your username and password to access admin panel.</p>
+                                </div>
+
+                                <form action="/" method="post">
+
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input class="form-control" type="text" id="emailaddress" name="username" required="" placeholder="Enter your username">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password">
+                                            <div class="input-group-text" data-password="false" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 mb-0 text-center">
+                                        <button class="btn btn-primary" type="submit"> Log In </button>
+                                    </div>
+
+                                </form>
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+
+        <footer class="footer footer-alt">
+            2022 - 2025
+        </footer>
+
+        <!-- bundle -->
+        <script src="js/vendor.min.js"></script>
+        <script src="js/app.min.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<%- include ('partials/header.ejs') %>
+
+<h1>Generate Questions</h1><br><br><br>
+<form action="/generatequestions" method="post">
+    <label>Total number of questions to be generated :</label>
+    <input type="text" name="tn" size="25" required><br><br>
+    <label>Number of questions to be generated based on Topic-1 :</label>
+    <input type="text" name="t1" size="25" required><br><br>
+    <label>Number of questions to be generated based on Topic-2 :</label>
+    <input type="text" name="t2" size="25" required><br><br>
+    <label>Number of questions to be generated based on Topic-3 :</label>
+    <input type="text" name="t3" size="25" required><br><br>
+    <label>Language :</label>
+    <select name="lan" required>
+        <option value="">Select language</option>
+        <option value="kannada">Kannada</option>
+        <option value="english">English</option>
+    </select><br><br>
+    <br><br><button type="submit" class="btn btn-primary">Generate Questions</button>
+</form>
+
+
+<%- include ('partials/footer.ejs') %>
